@@ -160,7 +160,7 @@ export function getAreaFromPositionAndShape(position, shape) {
 			// v12 ?? v11
 			if (canvas.grid?.even ?? canvas.grid.grid.options.even) shiftedRow = 1;
 			else shiftedRow = 0;
-			if (canvas.grid.columnar) {
+			if (canvas.grid.grid.columnar) {
 				if (space.x % 2 !== 0 && position.x % 2 !== shiftedRow) {
 					y += 1;
 				}
