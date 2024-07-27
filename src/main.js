@@ -138,8 +138,8 @@ function onEntityLeftDragStart(wrapped, event) {
 	ruler.draggedEntity = this;
 	const entityCenter = getEntityCenter(this);
 	ruler.rulerOffset = {
-		x: entityCenter.x - event.interactionData.origin.x,
-		y: entityCenter.y - event.interactionData.origin.y,
+		x: 0,
+		y: 0,
 	};
 	if (game.settings.get(settingsKey, "autoStartMeasurement")) {
 		let options = {};
